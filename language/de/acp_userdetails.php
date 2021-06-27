@@ -1,15 +1,15 @@
 <?php
 /**
-*
-* @package User Details Extension
-* @copyright (c) 2020 david63
-* @license GNU General Public License, version 2 (GPL-2.0)
-*
-*/
+ *
+ * @package User Details Extension
+ * @copyright (c) 2016 david63
+ * @license GNU General Public License, version 2 (GPL-2.0)
+ *
+ */
 
 /**
-* DO NOT CHANGE
-*/
+ * DO NOT CHANGE
+ */
 if (!defined('IN_PHPBB'))
 {
 	exit;
@@ -20,23 +20,25 @@ if (empty($lang) || !is_array($lang))
 	$lang = [];
 }
 
-// DEVELOPERS PLEASE NOTE
-//
-// All language files should use UTF-8 as their encoding and the files must not contain a BOM.
-//
-// Placeholders can now contain order information, e.g. instead of
-// 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
-// translators to re-order the output of data while ensuring it remains correct
-//
-// You do not need this where single placeholders are used, e.g. 'Message %d' is fine
-// equally where a string contains only two placeholders which are used to wrap text
-// in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
-//
-// Some characters you may want to copy&paste:
-// ’ » « “ ” …
-//
+/**
+ * DEVELOPERS PLEASE NOTE
+ *
+ * All language files should use UTF-8 as their encoding and the files must not contain a BOM.
+ *
+ * Placeholders can now contain order information, e.g. instead of
+ * 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
+ * translators to re-order the output of data while ensuring it remains correct
+ *
+ * You do not need this where single placeholders are used, e.g. 'Message %d' is fine
+ * equally where a string contains only two placeholders which are used to wrap text
+ * in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
+ *
+ * Some characters you may want to copy&paste:
+ * ’ » “ ” …
+ *
+ */
 
-$lang = array_merge($lang, array(
+$lang = array_merge($lang, [
 	'ACP_USER_DETAILS'			=> 'User details',
 	'ALL'						=> 'Alle',
 
@@ -108,21 +110,21 @@ $lang = array_merge($lang, array(
 	'START_CHARACTER'	=> 'A',
 	'END_CHARACTER'		=> 'Z',
 
-	'avatar_type' => array(
+	'avatar_type' => [
 		AVATAR_UPLOAD				=> 'Hochgeladenes Avatar',
 		AVATAR_REMOTE				=> 'Remote-Avatar',
 		AVATAR_GALLERY				=> 'Galerie-Avatar',
 		'avatar.driver.gravatar'	=> 'Gravatar',
-	),
+	],
 
-	'inactive_type' => array(
+	'inactive_type' => [
 		INACTIVE_REGISTER	=> 'Neu registriertes Konto',
 		INACTIVE_PROFILE	=> 'Profildetails geändert',
 		INACTIVE_MANUAL		=> 'Account deaktiviert durch Administrator',
 		INACTIVE_REMIND		=> 'Account Reaktivierung erzwungen',
-	),
+	],
 
-	'month_types' => array(
+	'month_types' => [
 		'1'  => 'Januar',
 		'2'  => 'Februar',
 		'3'  => 'März',
@@ -135,18 +137,18 @@ $lang = array_merge($lang, array(
 		'10' => 'Oktober',
 		'11' => 'November',
 		'12' => 'Dezember',
-	),
+	],
 
-	'notify_type' => array(
+	'notify_type' => [
 		NOTIFY_EMAIL	=> 'Email',
 		NOTIFY_IM		=> 'Jabber',
 		NOTIFY_BOTH		=> 'Email & Jabber',
-	),
+	],
 
-	'user_type' => array(
+	'user_type' => [
 		USER_NORMAL 	=> 'Normal',
 		USER_INACTIVE	=> 'Inaktiv',
 		USER_IGNORE 	=> 'Ignoriert',
 		USER_FOUNDER 	=> 'Gründer',
-	),
-));
+	],
+]);

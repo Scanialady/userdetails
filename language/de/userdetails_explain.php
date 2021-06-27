@@ -1,15 +1,15 @@
 <?php
 /**
-*
-* @package User Details Extension
-* @copyright (c) 2020 david63
-* @license GNU General Public License, version 2 (GPL-2.0)
-*
-*/
+ *
+ * @package User Details Extension
+ * @copyright (c) 2016 david63
+ * @license GNU General Public License, version 2 (GPL-2.0)
+ *
+ */
 
 /**
-* DO NOT CHANGE
-*/
+ * DO NOT CHANGE
+ */
 if (!defined('IN_PHPBB'))
 {
 	exit;
@@ -20,23 +20,25 @@ if (empty($lang) || !is_array($lang))
 	$lang = [];
 }
 
-// DEVELOPERS PLEASE NOTE
-//
-// All language files should use UTF-8 as their encoding and the files must not contain a BOM.
-//
-// Placeholders can now contain order information, e.g. instead of
-// 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
-// translators to re-order the output of data while ensuring it remains correct
-//
-// You do not need this where single placeholders are used, e.g. 'Message %d' is fine
-// equally where a string contains only two placeholders which are used to wrap text
-// in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
-//
-// Some characters you may want to copy&paste:
-// ’ » “ ” …
-//
+/**
+ * DEVELOPERS PLEASE NOTE
+ *
+ * All language files should use UTF-8 as their encoding and the files must not contain a BOM.
+ *
+ * Placeholders can now contain order information, e.g. instead of
+ * 'Page %s of %s' you can (and should) write 'Page %1$s of %2$s', this allows
+ * translators to re-order the output of data while ensuring it remains correct
+ *
+ * You do not need this where single placeholders are used, e.g. 'Message %d' is fine
+ * equally where a string contains only two placeholders which are used to wrap text
+ * in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
+ *
+ * Some characters you may want to copy&paste:
+ * ’ » “ ” …
+ *
+ */
 
-$lang = array_merge($lang, array(
+$lang = array_merge($lang, [
 	'USER_DETAILS_SELECT'			=> '&bull;&nbsp;Hier kannst du die Benutzerdetails auswählen, die du anzeigen möchtest. <br>&bull;&nbsp;Sei dir dessen bewusst, dass eine größere Anzahl ausgewählter Attribute möglicherweise nicht auf die Seite passt, und die Darstellung daher nicht korrekt ist (abhängig von der Breite deiner Browserseite).',
 
 	'ATTRIBUTE'						=> 'Attribute',
@@ -86,4 +88,4 @@ $lang = array_merge($lang, array(
 	'USER_TYPE_EXPLAIN'				=> 'Der Benutzertyp.',
 	'USER_UNREAD_PRIVMSG_EXPLAIN'	=> 'Die Anzahl ungelesener privater Nachrichten, die der Benutzer derzeit hat.',
 	'USER_WARNINGS_EXPLAIN'			=> 'Die Anzahl an Verwarnungen, die dem Benutzer erteilt wurden.',
-));
+]);
